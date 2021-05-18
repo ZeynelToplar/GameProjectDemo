@@ -10,14 +10,9 @@ namespace GameProjectDemo.Concrete
 {
     class GameSaleManager : IGameSaleService
     {
-        private Campaigns campaign;
+        
 
-        public GameSaleManager(Campaigns campaign)
-        {
-            this.campaign = campaign;
-        }
-
-        public void Sale(Gamer gamer, Game game)
+        public void Sale(Gamer gamer, Game game, Campaigns campaign)
         {
             double newPrice = game.GamePrice - (game.GamePrice * (campaign.CampaignDiscount / 100));
             Console.WriteLine(game.GameName + " oyunu " + gamer.FirstName+ " " + gamer.LastName + " kişisine satıldı.");

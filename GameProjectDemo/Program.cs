@@ -82,13 +82,17 @@ namespace GameProjectDemo
             Console.WriteLine("************************");
 
             //Oyun satışlarının yönetildiği kısım. 
-            GameSaleManager gameSaleManager = new GameSaleManager(campaign1);
-            gameSaleManager.Sale(gamer1, game1);
+            GameSaleManager gameSaleManager = new GameSaleManager();
+            gameSaleManager.Sale(gamer1, game1,campaign1);
 
             Console.WriteLine("************************");
 
-            GameSaleManager gameSaleManager2 = new GameSaleManager(campaign2);
-            gameSaleManager2.Sale(gamer2, game3);
+            gameSaleManager.Sale(gamer2, game3, campaign2);
+
+
+            
+
+            
 
             Console.ReadLine();
         }
