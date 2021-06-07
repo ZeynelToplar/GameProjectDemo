@@ -9,6 +9,6 @@ namespace GameProjectDemo.Abstract
 {
     public interface IVerificationService
     {
-        bool CheckİfRealPerson(Gamer gamer);
+        bool CheckIfRealPerson(Gamer gamer);
     }
 }

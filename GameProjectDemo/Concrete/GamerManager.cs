@@ -24,7 +24,7 @@ namespace GameProjectDemo.Concrete
 
         public void Add(Gamer gamer)
         {
-            if (verificationService.CheckİfRealPerson(gamer))
+            if (verificationService.CheckIfRealPerson(gamer))
             {
                 Console.WriteLine(gamer.FirstName + gamer.LastName + " adlı oyuncu eklendi.");
             }

@@ -1,6 +1,5 @@
 ﻿using GameProjectDemo.Concrete;
 using GameProjectDemo.Entities;
-using GameProjectDemo.Concrete;
 using System;
 
 namespace GameProjectDemo

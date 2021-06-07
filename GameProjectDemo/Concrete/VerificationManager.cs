@@ -10,7 +10,7 @@ namespace GameProjectDemo.Concrete
 {
     class VerificationManager : IVerificationService
     {
-        public bool CheckİfRealPerson(Gamer gamer)
+        public bool CheckIfRealPerson(Gamer gamer)
         {                             
             if (gamer.NationalityId.Length == 11)
             {
